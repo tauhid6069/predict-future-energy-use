@@ -51,8 +51,8 @@ Notebook: `notebooks/time_series_forecasting.ipynb`
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/energy-forecasting-project.git
-cd energy-forecasting-project
+git clone https://github.com/tauhid6069/predict-future-energy-use.git
+cd predict-future-energy-use
 ```
 
 ### 2️⃣ Install dependencies
