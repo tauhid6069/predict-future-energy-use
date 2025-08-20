@@ -78,7 +78,5 @@ All dependencies are listed in `requirements.txt`.
 
 ## 📝 Author
 - **Md Tauhidul Islam**  
-  📧 [your.email@example.com]  
   🌐 [www.linkedin.com/in/tauhidul-islam]
 
----
