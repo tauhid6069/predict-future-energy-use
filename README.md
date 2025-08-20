@@ -1,34 +1,48 @@
-# Predict Future Energy Use in a Household
+# Household Energy Forecasting – Machine Learning & Time Series
 
-This project applies **machine learning techniques** to forecast household energy consumption based on historical data. The notebook demonstrates data preprocessing, exploratory analysis, feature engineering, model training, and evaluation for energy usage prediction.
-
----
-
-## 📌 Project Overview
-Accurately predicting household energy use is crucial for:
-- Improving energy efficiency
-- Reducing costs
-- Supporting sustainable energy management
-
-This project explores machine learning models to predict **future energy consumption** using household-level features and past usage data.
+This repository contains two projects focused on **predicting household energy consumption** using both **traditional machine learning** and **time series forecasting** techniques. The goal is to explore different approaches for understanding and predicting how energy usage evolves over time.
 
 ---
 
-## 🔧 Features
+## 📌 Projects Included
+
+### 1️⃣ Predict Future Energy Use in a Household
+Applies **regression models** to predict household energy consumption based on household characteristics and historical features.
+
+**Highlights:**
 - Data preprocessing and cleaning  
-- Exploratory Data Analysis (EDA) with visualizations  
-- Feature engineering for time-series and household characteristics  
-- Model training with regression algorithms  
-- Model evaluation and performance comparison  
+- Exploratory Data Analysis (EDA)  
+- Feature engineering  
+- Machine learning models (Linear Regression, Decision Tree, Random Forest, Gradient Boosting, Neural Networks)  
+- Evaluation using MAE, MSE, RMSE, and R² Score  
+
+Notebook: `notebooks/predict-future-energy-use-in-a-household.ipynb`
+
+---
+
+### 2️⃣ Time Series Forecasting of Energy Use
+Applies **time series forecasting** to predict household energy consumption over time using both statistical and deep learning approaches.
+
+**Highlights:**
+- Time-series decomposition into trend/seasonality/residuals  
+- Stationarity testing and differencing  
+- Forecasting with ARIMA/SARIMA and Exponential Smoothing  
+- Deep learning models (LSTMs with TensorFlow/Keras)  
+- Evaluation using MAE, RMSE, and MAPE  
+
+Notebook: `notebooks/time_series_forecasting.ipynb`
 
 ---
 
 ## 📂 Repository Structure
 ```
 .
-├── predict-future-energy-use-in-a-household.ipynb   # Main Jupyter Notebook
-├── requirements.txt                                 # List of dependencies
-├── README.md                                        # Project documentation
+├── notebooks/
+│   ├── predict-future-energy-use-in-a-household.ipynb
+│   ├── time_series_forecasting.ipynb
+├── requirements.txt                   # Dependencies for regression notebook
+├── requirements_time_series.txt       # Dependencies for time series notebook
+├── README.md                          # Documentation
 ```
 
 ---
@@ -37,42 +51,38 @@ This project explores machine learning models to predict **future energy consump
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/your-username/energy-forecasting-project.git
+cd energy-forecasting-project
 ```
 
 ### 2️⃣ Install dependencies
+For regression-based energy prediction:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the notebook
-Open the Jupyter Notebook:
+For time series forecasting:
 ```bash
-jupyter notebook predict-future-energy-use-in-a-household.ipynb
+pip install -r requirements_time_series.txt
+```
+
+### 3️⃣ Run the notebooks
+```bash
+jupyter notebook notebooks/
 ```
 
 ---
 
-## 📊 Models Used
-- Linear Regression  
-- Decision Tree Regressor  
-- Random Forest Regressor  
-- Gradient Boosting Regressor  
-- (Optional) Neural Networks  
+## 📊 Models Covered
+- **Machine Learning Models**: Linear Regression, Decision Tree, Random Forest, Gradient Boosting  
+- **Statistical Models**: ARIMA, SARIMA, Exponential Smoothing  
+- **Deep Learning Models**: LSTMs (TensorFlow/Keras)  
 
 ---
 
 ## 📈 Evaluation Metrics
-- Mean Absolute Error (MAE)  
-- Mean Squared Error (MSE)  
-- Root Mean Squared Error (RMSE)  
-- R² Score  
-
----
-
-## 📌 Requirements
-All dependencies are listed in `requirements.txt`.
+- **Regression Models**: MAE, MSE, RMSE, R²  
+- **Time Series Models**: MAE, RMSE, MAPE  
 
 ---
 
