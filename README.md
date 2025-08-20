@@ -88,5 +88,5 @@ jupyter notebook notebooks/
 
 ## 📝 Author
 - **Md Tauhidul Islam**  
-  🌐 [www.linkedin.com/in/tauhidul-islam]
+  [LinkedIn](www.linkedin.com/in/tauhidul-islam) 
 
